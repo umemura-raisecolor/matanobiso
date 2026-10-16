@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>代表挨拶｜俣野美装 江戸川区の外壁・屋根・防水塗装</title>
+<meta name="description" content="漆職人だった祖父が始めたペンキ屋から三代。俣野美装 代表 俣野寿和のご挨拶。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f1b17;        /* 漆黒 */
+  --ink-soft:#4a433b;
+  --paper:#f7f2e8;      /* 生成り */
+  --paper-deep:#efe6d4;
+  --white:#fffdf8;
+  --shu:#a8322a;        /* 漆の朱 */
+  --shu-dark:#862720;
+  --gold:#a88a4a;       /* 金茶 */
+  --line:#d9cdb5;
+  --radius:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Zen Kaku Gothic New",sans-serif;
+  font-size:18px;line-height:1.95;color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:72px;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.mincho{font-family:"Shippori Mincho",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* デモ表示 */
+.demo-bar{background:var(--ink);color:#e9dfcb;font-size:14px;text-align:center;padding:8px 16px;line-height:1.6}
+
+/* ヘッダー */
+header{position:sticky;top:0;z-index:50;background:rgba(247,242,232,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:center;justify-content:space-between;gap:16px;height:78px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{width:46px;height:46px;border-radius:50%;background:var(--shu);color:#fff;display:grid;place-items:center;font-family:"Shippori Mincho",serif;font-weight:800;font-size:22px}
+.logo-text b{display:block;font-family:"Shippori Mincho",serif;font-size:26px;letter-spacing:.12em;line-height:1.1}
+.logo-text small{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em}
+nav ul{display:flex;gap:22px;list-style:none}
+nav a,.logo-text b,.logo-text small,.head-tel small{white-space:nowrap}
+nav a{text-decoration:none;font-weight:500;font-size:16.5px}
+nav a:hover{color:var(--shu)}
+.head-tel{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;line-height:1.25}
+.head-tel b{font-size:24px;letter-spacing:.04em;color:var(--shu)}
+.head-tel small{font-size:12.5px;color:var(--ink-soft)}
+.menu-btn{display:none;background:none;border:1px solid var(--ink);border-radius:var(--radius);padding:8px 14px;font:inherit;font-size:15px}
+
+/* ヒーロー */
+.hero{position:relative;overflow:hidden;background:var(--ink)}
+.hero-img{position:absolute;inset:0;background:url("https://www.matanobiso.com/img/case03-b.jpg") center/cover no-repeat;opacity:.35}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,27,23,.94) 0%,rgba(31,27,23,.78) 50%,rgba(31,27,23,.35) 100%)}
+.hero .wrap{position:relative;z-index:2;color:#fff;width:100%;display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:20px;min-height:660px}
+.hero-text{padding:90px 0 80px;align-self:center}
+.hero-since{display:inline-block;border:1px solid var(--gold);color:#e6d3a4;padding:4px 16px;font-size:15px;letter-spacing:.2em;margin-bottom:26px}
+.hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(30px,4.2vw,54px);line-height:1.45;letter-spacing:.06em}
+.hero h1 em{font-style:normal;color:#f0c9a6}
+.hero h1 span{display:inline-block;white-space:nowrap}
+.hero p.lead{font-size:clamp(17px,1.7vw,19px);margin:24px 0 32px;max-width:580px;color:#f1ebe0}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.hero-badges span{background:rgba(255,253,248,.12);border:1px solid rgba(255,255,255,.35);padding:7px 16px;border-radius:40px;font-size:15.5px}
+.hero-person{position:relative;align-self:end;display:flex;justify-content:center}
+.hero-person::before{content:"";position:absolute;left:50%;bottom:60px;transform:translateX(-50%);width:min(440px,92%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 45%,#c2463b 0%,var(--shu) 55%,var(--shu-dark) 100%);opacity:.95}
+.hero-person img{position:relative;width:min(470px,100%);filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.hero-plate{position:absolute;left:0;bottom:46px;background:var(--paper);color:var(--ink);padding:12px 20px 12px 18px;border-left:5px solid var(--shu);box-shadow:0 8px 20px rgba(0,0,0,.3);line-height:1.4}
+.hero-plate small{display:block;font-size:13px;color:var(--ink-soft);letter-spacing:.1em}
+.hero-plate b{font-family:"Shippori Mincho",serif;font-size:24px;letter-spacing:.15em}
+.hero-note{position:absolute;right:6px;bottom:8px;font-size:11.5px;color:rgba(255,255,255,.7)}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;padding:16px 30px;border-radius:var(--radius);font-size:18px;transition:.2s}
+.btn-shu{background:var(--shu);color:#fff}
+.btn-shu:hover{background:var(--shu-dark)}
+.btn-line{border:1.5px solid #fff;color:#fff}
+.btn-line:hover{background:#fff;color:var(--ink)}
+
+/* セクション共通 */
+section{padding:110px 0}
+.sec-head{text-align:center;margin-bottom:60px}
+.sec-head .en{display:block;font-family:"Shippori Mincho",serif;color:var(--shu);letter-spacing:.3em;font-size:15px;margin-bottom:6px}
+.sec-head h2{font-family:"Shippori Mincho",serif;font-size:clamp(28px,3.6vw,40px);letter-spacing:.08em;line-height:1.5}
+.sec-head p{margin-top:16px;color:var(--ink-soft)}
+.bg-white{background:var(--white)}
+.bg-deep{background:var(--paper-deep)}
+
+/* 写真差し替え枠 */
+.ph{position:relative;background:repeating-linear-gradient(45deg,#e7dcc6 0 14px,#efe6d4 14px 28px);border:2px dashed var(--gold);border-radius:var(--radius);display:grid;place-items:center;text-align:center;color:var(--ink-soft);font-size:15px;line-height:1.6;padding:18px;min-height:220px}
+.ph b{display:block;color:var(--shu);font-size:16px;margin-bottom:4px}
+
+/* 想い(ストーリー) */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.story h2{font-family:"Shippori Mincho",serif;font-size:clamp(25px,2.9vw,36px);line-height:1.6;letter-spacing:.06em;margin-bottom:28px}
+.story h2 span{white-space:nowrap;display:inline-block}
+.story h2 .accent{color:var(--shu)}
+h1,h2,h3{text-wrap:balance}
+p,dd,li{text-wrap:pretty}
+.story p+p{margin-top:18px}
+.story-photos{display:grid;grid-template-columns:1fr;gap:14px}
+.story-photos img{width:100%;height:240px;object-fit:cover;border-radius:var(--radius)}
+.story-photos img.sp-main{grid-column:1/3;height:300px}
+.team{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+.team-img{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.team-img img{width:100%;height:230px;object-fit:cover;border-radius:var(--radius)}
+.team-img img:first-child{grid-column:1/3;height:280px}
+.team-cards{display:grid;gap:18px}
+.team-card{background:var(--white);border-left:4px solid var(--shu);border-radius:var(--radius);padding:24px 28px}
+.team-card h3{font-family:"Shippori Mincho",serif;font-size:22px;margin-bottom:6px}
+.team-card p{color:var(--ink-soft);font-size:16.5px}
+.team-num{font-family:"Shippori Mincho",serif;color:var(--shu);font-size:40px;font-weight:800;line-height:1}
+@media (max-width:1000px){.team{grid-template-columns:1fr}}
+
+/* 強み */
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.point{background:var(--white);border-top:4px solid var(--shu);padding:38px 36px;border-radius:var(--radius);box-shadow:0 2px 0 var(--line)}
+.point h3{font-family:"Shippori Mincho",serif;font-size:24px;line-height:1.55;margin-bottom:14px}
+.point p{color:var(--ink-soft)}
+
+/* サービス */
+.services{display:grid;gap:36px}
+.service{display:grid;grid-template-columns:1.05fr 1fr;background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.service:nth-child(even) .service-img{order:2}
+.service-img{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--line)}
+.service-img figure{position:relative;margin:0}
+.service-img img{width:100%;height:100%;object-fit:cover;min-height:300px}
+.service-img figcaption,.case-imgs figcaption{position:absolute;left:10px;top:10px;background:var(--ink);color:#fff;font-size:13px;padding:2px 12px;letter-spacing:.1em}
+.service-img figure:last-child figcaption,.case-imgs figure:last-child figcaption{background:var(--shu)}
+.service-body{padding:42px 44px}
+.service-body .tag{color:var(--shu);font-size:14px;letter-spacing:.2em;font-family:"Shippori Mincho",serif}
+.service-body h3{font-family:"Shippori Mincho",serif;font-size:30px;margin:4px 0 12px}
+.service-body .catch{font-weight:700;margin-bottom:18px}
+.price{display:flex;align-items:baseline;gap:10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;flex-wrap:wrap}
+.price small{font-size:15px;color:var(--ink-soft)}
+.price b{font-family:"Shippori Mincho",serif;font-size:34px;color:var(--shu)}
+.spec{list-style:none;font-size:16.5px}
+.spec li{padding-left:1.3em;position:relative}
+.spec li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+
+/* 施工事例 */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.case{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.case-imgs{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.case-imgs figure{position:relative;margin:0}
+.case-imgs img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.case-body{padding:22px 24px 26px}
+.case-body h3{font-family:"Shippori Mincho",serif;font-size:21px;margin-bottom:8px}
+.case-body dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:16px}
+.case-body dt{color:var(--ink-soft)}
+.case-body .voice{margin-top:12px;background:var(--paper);padding:10px 14px;font-size:15.5px;border-left:3px solid var(--shu)}
+.case.more{justify-content:center;align-items:center;text-align:center;padding:30px;border:2px dashed var(--gold);background:transparent}
+
+/* 代表挨拶 */
+.greet{display:grid;grid-template-columns:360px 1fr;gap:60px;align-items:start}
+.greet-photo img{width:100%;border-radius:var(--radius);background:var(--paper-deep)}
+.greet-name{margin-top:18px}
+.greet-name small{display:block;color:var(--ink-soft);font-size:15px}
+.greet-name b{font-family:"Shippori Mincho",serif;font-size:30px;letter-spacing:.15em}
+.greet-name .en{font-size:14px;letter-spacing:.2em;color:var(--gold)}
+.greet-prof{margin-top:14px;font-size:15.5px;color:var(--ink-soft);list-style:none}
+.greet-body h3{font-family:"Shippori Mincho",serif;font-size:27px;line-height:1.6;margin:0 0 18px;color:var(--shu)}
+.greet-body h3:not(:first-child){margin-top:44px}
+.greet-body p+p{margin-top:16px}
+.sign{text-align:right;margin-top:30px;font-family:"Shippori Mincho",serif;font-size:20px}
+
+/* スタッフ */
+.staff{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.member .ph{min-height:0;aspect-ratio:3/4;padding:10px;font-size:13.5px}
+.member h3{font-family:"Shippori Mincho",serif;font-size:19px;margin-top:12px}
+.member .role{font-size:14px;color:var(--shu)}
+.member p{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-top:4px}
+
+/* 流れ */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:f}
+.flow li{list-style:none;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px 20px;text-align:center;position:relative}
+.flow li:not(:last-child)::after{content:"";position:absolute;right:-13px;top:50%;border:8px solid transparent;border-left-color:var(--shu);transform:translateY(-50%)}
+.flow .ic{width:58px;height:58px;margin:0 auto 12px;border-radius:50%;background:var(--paper-deep);display:grid;place-items:center;color:var(--shu)}
+.flow h3{font-family:"Shippori Mincho",serif;font-size:20px;margin-bottom:6px}
+.flow p{font-size:15.5px;color:var(--ink-soft);line-height:1.75}
+
+/* FAQ */
+.faq{max-width:860px;margin:0 auto}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px}
+.faq summary{cursor:pointer;list-style:none;padding:22px 56px 22px 64px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";position:absolute;left:24px;top:18px;font-family:"Shippori Mincho",serif;font-size:24px;color:var(--shu)}
+.faq summary::after{content:"＋";position:absolute;right:24px;top:20px;color:var(--gold)}
+.faq details[open] summary::after{content:"－"}
+.faq .a{padding:0 28px 24px 64px;color:var(--ink-soft)}
+
+/* 会社概要 */
+.company{display:grid;grid-template-columns:1.15fr 1fr;gap:50px}
+.company table{width:100%;border-collapse:collapse;background:var(--white);font-size:16.5px}
+.company th,.company td{border-bottom:1px solid var(--line);padding:15px 18px;text-align:left;vertical-align:top}
+.company th{width:9.5em;background:var(--paper-deep);font-weight:500;white-space:nowrap}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:380px;height:100%}
+.map iframe{width:100%;height:100%;min-height:380px;border:0}
+
+/* お問い合わせ */
+.contact{background:var(--ink);color:#fff;text-align:center}
+.contact .sec-head h2{color:#fff}
+.contact .sec-head p{color:#d8cfbf}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:900px;margin:0 auto}
+.contact-card{border:1px solid rgba(255,255,255,.25);border-radius:var(--radius);padding:38px 26px}
+.contact-card h3{font-family:"Shippori Mincho",serif;font-size:22px;margin-bottom:10px}
+.contact-card .tel{display:block;font-size:clamp(30px,4vw,40px);font-weight:700;color:#f0c9a6;text-decoration:none;letter-spacing:.04em}
+.contact-card p{font-size:15.5px;color:#d8cfbf}
+.contact-card .btn{margin-top:18px}
+
+footer{background:#15120f;color:#bdb3a2;font-size:15px;padding:46px 0 30px}
+.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.foot b{font-family:"Shippori Mincho",serif;color:#fff;font-size:22px;letter-spacing:.12em}
+.foot ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px}
+.foot a{text-decoration:none}
+.copy{text-align:center;margin-top:34px;font-size:13px}
+
+/* スマホ固定バー */
+.sp-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr;box-shadow:0 -2px 10px rgba(0,0,0,.15)}
+.sp-bar a{display:flex;align-items:center;justify-content:center;gap:8px;height:64px;text-decoration:none;font-weight:700;font-size:17px}
+.sp-bar a:first-child{background:var(--shu);color:#fff}
+.sp-bar a:last-child{background:var(--ink);color:#fff}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.on{opacity:1;transform:none}
+
+@media (max-width:1240px){
+  nav{display:none;position:absolute;top:78px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line)}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:8px 20px 16px}
+  nav li a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-size:18px}
+  .menu-btn{display:block}
+}
+@media (max-width:1000px){
+  .head-tel{display:none}
+  .story,.greet,.company{grid-template-columns:1fr;gap:40px}
+  .hero .wrap{grid-template-columns:1fr 1fr}
+  .greet-photo{max-width:360px}
+  .service{grid-template-columns:1fr}
+  .service:nth-child(even) .service-img{order:0}
+  .cases{grid-template-columns:1fr 1fr}
+  .staff{grid-template-columns:repeat(3,1fr)}
+  .flow{grid-template-columns:1fr;gap:20px}
+  .flow li:not(:last-child)::after{right:50%;top:auto;bottom:-19px;transform:translateX(50%) rotate(90deg)}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  section{padding:76px 0}
+  .head{height:68px}
+  nav{top:68px}
+  .logo-text b{font-size:22px}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;gap:0}
+  .hero h1{font-size:31px}
+  .hero-text{padding:56px 0 10px}
+  .hero-person img{width:min(330px,82%)}
+  .hero-person::before{width:min(300px,78%);bottom:40px}
+  .hero-plate{left:4px;bottom:30px;padding:9px 14px}
+  .hero-plate b{font-size:20px}
+  .points,.cases,.contact-box{grid-template-columns:1fr}
+  .staff{grid-template-columns:1fr 1fr}
+  .point{padding:30px 24px}
+  .service-body{padding:30px 22px}
+  .service-img img{min-height:200px}
+  .company th{width:6.5em;white-space:normal}
+  .sp-bar{display:grid}
+  .faq summary{padding:20px 44px 20px 56px}
+  .faq .a{padding:0 20px 22px 56px}
+}
+@media (min-width:641px){body{padding-bottom:0}}
+
+/* 複数ページ用 */
+nav a.active{color:var(--shu);border-bottom:2px solid var(--shu);padding-bottom:4px}
+.page-title{position:relative;background:var(--ink);color:#fff;padding:80px 0 70px;overflow:hidden}
+.page-title::before{content:"";position:absolute;inset:0;background:url("https://www.matanobiso.com/img/case03-b.jpg") center/cover;opacity:.22}
+.page-title .wrap{position:relative}
+.page-title .en{font-family:"Shippori Mincho",serif;color:#f0c9a6;letter-spacing:.3em;font-size:15px}
+.page-title h1{font-family:"Shippori Mincho",serif;font-size:clamp(32px,4.4vw,48px);letter-spacing:.1em;margin-top:4px}
+.crumb{font-size:14px;color:#d8cfbf;margin-top:10px}
+.crumb a{text-decoration:none}
+.more{text-align:center;margin-top:46px}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.svc-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.svc-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:.2s}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.svc-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.svc-card div{padding:20px 22px 24px}
+.svc-card .tag{font-family:"Shippori Mincho",serif;color:var(--shu);font-size:13px;letter-spacing:.2em}
+.svc-card h3{font-family:"Shippori Mincho",serif;font-size:23px;margin:2px 0 6px}
+.svc-card p{font-size:15.5px;color:var(--ink-soft);line-height:1.75}
+.svc-card .from{display:block;margin-top:10px;font-family:"Shippori Mincho",serif;color:var(--shu);font-size:20px;font-weight:700}
+.teaser{display:grid;grid-template-columns:320px 1fr;gap:56px;align-items:center}
+.teaser img{width:100%;border-radius:var(--radius)}
+.teaser h2{font-family:"Shippori Mincho",serif;font-size:clamp(25px,2.8vw,34px);line-height:1.6;margin:6px 0 18px}
+.teaser .en{font-family:"Shippori Mincho",serif;color:var(--shu);letter-spacing:.3em;font-size:15px}
+.teaser .btn{margin-top:26px}
+@media (max-width:1000px){.svc-cards{grid-template-columns:1fr 1fr}.teaser{grid-template-columns:1fr;gap:30px}.teaser img{max-width:320px}}
+@media (max-width:640px){.svc-cards{grid-template-columns:1fr}.page-title{padding:56px 0 50px}}
+</style>
+</head>
+<body>
+<div class="demo-bar">このページは、俣野美装様へのご提案用に作成したリニューアルデモです(施工写真は現在のホームページから使用、トップの代表写真はイメージです)</div>
+<header>
+  <div class="wrap head">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">俣</span>
+      <span class="logo-text"><b>俣野美装</b><small>江戸川区南小岩の塗装店</small></span>
+    </a>
+    <nav id="nav"><ul><li><a href="index.html">TOP</a></li><li><a href="business.html">事業案内</a></li><li><a href="works.html">施工事例</a></li><li><a href="greeting.html" class="active">代表挨拶</a></li><li><a href="company.html">会社案内</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></nav>
+    <a class="head-tel" href="tel:0364580546"><b>03-6458-0546</b><small>8:00〜17:00(夏季18:00)／日曜定休</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー">メニュー</button>
+  </div>
+</header>
+<main>
+<div class="page-title"><div class="wrap"><span class="en">GREETING</span><h1>代表挨拶</h1><p class="crumb"><a href="index.html">TOP</a>　›　代表挨拶</p></div></div>
+<section id="greeting" class="bg-white">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="en">MESSAGE</span>
+      <h2>ごあいさつ</h2>
+    </div>
+    <div class="greet">
+      <div class="greet-photo reveal">
+        <img src="https://www.matanobiso.com/img/greeting01.png" alt="代表 俣野寿和">
+        <div class="greet-name">
+          <small>俣野美装 代表</small>
+          <b>俣野 寿和</b><br><span class="en">TOSHIKAZU MATANO</span>
+        </div>
+        <ul class="greet-prof">
+          <li>江戸川区南小岩出身</li>
+          <li>趣味:ゴルフ、フットサル</li>
+        </ul>
+      </div>
+      <div class="greet-body reveal">
+        <h3>漆職人から、ペンキ屋へ。<br>祖父の始めた仕事を受け継いで。</h3>
+        <p>創業者である私の祖父は、もともと腕のいい漆職人でした。先を見る目があった祖父は、その技術をそのまま活かせて将来性もある、当時新しい仕事だったペンキ屋を、ここ江戸川区南小岩で始めました。それが当社のはじまりです。</p>
+        <p>創業当時は車を買うお金などなく、移動はすべて自転車。荷台にミカン箱をくくりつけてペンキ道具を入れ、遠い現場まで都内を走り回っていたそうです。ようやく軌道に乗ったころには空襲ですべてを失い、ゼロからの再出発。そんな祖父や父の苦労が土台となり、お客様に支えられて、今も仕事をさせていただけていることに、いつも感謝の気持ちでいっぱいです。</p>
+        <h3>「お宅は丁寧だから」を、<br>当たり前に。</h3>
+        <p>丁寧な仕事の秘訣は、下地の処理だと考えています。仕上がれば目に見えなくなる部分ですが、見えないところにこそ気を配るのがプロの仕事です。</p>
+        <p>「決して手を抜かない」「親切丁寧に作業する」「周囲に気を配る」。当たり前のことを当たり前にやり続けることで、約80年の伝統と、お客様の信頼にお応えしていきます。</p>
+        <p class="sign">俣野美装 代表　俣野 寿和</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="staff" class="bg-deep">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="en">CRAFTSMEN</span>
+      <h2>自社の職人がうかがいます</h2>
+      <p>少人数だからこそ、一軒一軒を最後まで責任をもって仕上げます。</p>
+    </div>
+    <div class="team reveal">
+      <div class="team-img">
+        <img src="https://www.matanobiso.com/img/case05-b.jpg" alt="江戸川区南葛西W様宅 施工後">
+        <img src="https://www.matanobiso.com/img/case02-b.jpg" alt="葛飾区K様邸 施工後">
+        <img src="https://www.matanobiso.com/img/business04.png" alt="屋根塗装の仕上がり">
+      </div>
+      <div class="team-cards">
+        <div class="team-card"><span class="team-num">5<small style="font-size:20px">名</small></span><h3 style="margin-top:8px">少数精鋭の自社職人</h3><p>下請けには出さず、ご相談から仕上げまで顔の見えるスタッフが担当します。</p></div>
+        <div class="team-card"><h3>確かな資格と許可</h3><p>塗装工事業 東京都知事許可を取得。有機溶剤作業主任者、職長・安全衛生責任者の有資格者が現場を管理します。</p></div>
+        <div class="team-card"><h3>地域に根ざして</h3><p>江戸川塗装組合・江戸川区土建労働組合に加入。南小岩で三代、ご近所のお付き合いを大切にしています。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="en" style="color:#f0c9a6">CONTACT</span>
+      <h2>お住まいのこと、まずはお気軽に</h2>
+      <p>「まだ塗り替えるか決めていない」「見てもらうだけでも」という段階のご相談も歓迎です。</p>
+    </div>
+    <div class="contact-box reveal">
+      <div class="contact-card">
+        <h3>お電話でのご相談</h3>
+        <a class="tel" href="tel:0364580546">03-6458-0546</a>
+        <p>8:00〜17:00(夏季は18:00)／日曜定休</p>
+        <p style="margin-top:6px">FAX 03-6458-0576</p>
+      </div>
+      <div class="contact-card">
+        <h3>フォームでのご相談</h3>
+        <p>24時間受け付けています。写真を添えてご相談いただくことも可能です。</p>
+        <a class="btn btn-shu" href="contact.html">お問い合わせフォーム</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <b>俣野美装</b>
+        <p style="margin-top:10px">〒133-0056 東京都江戸川区南小岩2-7-16<br>TEL 03-6458-0546／FAX 03-6458-0576</p>
+      </div>
+      <ul><li><a href="index.html">TOP</a></li><li><a href="business.html">事業案内</a></li><li><a href="works.html">施工事例</a></li><li><a href="greeting.html">代表挨拶</a></li><li><a href="company.html">会社案内</a></li><li><a href="contact.html">お問い合わせ</a></li></ul>
+    </div>
+    <p class="copy">© Matanobiso All Rights Reserved.</p>
+  </div>
+</footer>
+<div class="sp-bar">
+  <a href="tel:0364580546">電話で相談</a>
+  <a href="contact.html">フォームで相談</a>
+</div>
+<script>
+  const btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
